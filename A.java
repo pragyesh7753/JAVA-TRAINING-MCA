@@ -435,7 +435,7 @@
 /* 
   class A {
   
-  int i = 4;
+  int i = 4;  //instance variable
   
   public static void main(String args[]) {
   
@@ -473,3 +473,5 @@
  * 
  * }
  */
+
+ //if we declare a variable or method is declared as static then it can be accessed without creating the object of the class and it will have only 1 copy per class...
