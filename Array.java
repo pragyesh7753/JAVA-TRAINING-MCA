@@ -77,13 +77,16 @@ public class Array {
         // Math.abs(sumEven - sumOdd));
 
         // // Reverse an array
-        int b[] = new int[a.length];
-        int n = Math.abs((a.length) / 2);
-        for (int i = 0; i < n; i++) {
-            b[i] = a[a.length - i - 1];
+        int n = a.length;
+        int s = a[0];
+        int e = a[n - 1];
+        for (int i = 0; i < n / 2; i++) {
+            a[i] = e;
+            a[n - 1 - i] = s;
+            s = a[i + 1];
+            e = a[n - 2 - i];
         }
-        System.out.println("Reversed array is: ");
-        for (int i : b) {
+        for (int i : a) {
             System.out.println(i);
         }
     }
