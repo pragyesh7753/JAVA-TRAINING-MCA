@@ -93,5 +93,16 @@ public class Array {
         for (int i = a.length - 1; i >= 0; i--) {
             System.out.println(a[i]);
         }
+
+        // // Reverse an array without using another array
+        // int n = a.length;
+        // for (int i = 0; i < n / 2; i++) {
+        //     int temp = a[i];
+        //     a[i] = a[n - 1 - i];
+        //     a[n - 1 - i] = temp;
+        // }
+        // for (int i : a) {
+        //     System.out.println(i);
+        // }
     }
 }
