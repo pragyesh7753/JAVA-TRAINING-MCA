@@ -89,7 +89,7 @@ public class Array {
         // for (int i : a) {
         // System.out.println(i);
         // }
-
+        // Alternate way
         for (int i = a.length - 1; i >= 0; i--) {
             System.out.println(a[i]);
         }
